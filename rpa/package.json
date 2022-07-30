@@ -1,0 +1,15 @@
+{
+  "name": "rpa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node src/index.js"
+  },
+  "dependencies": {
+    "puppeteer": "^15.5.0",
+    "puppeteer-core": "^15.5.0",
+    "sequelize": "^6.21.3",
+    "sqlite3": "^5.0.10"
+  }
+}
