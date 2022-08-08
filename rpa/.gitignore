@@ -1,2 +1,4 @@
 node_modules
 yarn.lock
+default.sqlite-shm
+default.sqlite-wal
