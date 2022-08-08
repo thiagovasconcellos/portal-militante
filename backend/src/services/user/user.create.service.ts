@@ -1,5 +1,5 @@
 import { UserRepository } from '../../database/postgres/repositories/user.repository';
-import Hash from '../libs/Hash';
+import Hash from '../_libs/Hash';
 import AppError from '../../errors/AppError';
 import { isValidEmail } from '../../helpers';
 
@@ -15,13 +15,15 @@ interface IResponse {
 }
 
 class CreateUserService {
-  constructor() {}
-
-  public async execute({login, password, email}: IRequest): Promise<IResponse> {
+  public async execute({
+    login,
+    password,
+    email,
+  }: IRequest): Promise<IResponse> {
     const userExists = await UserRepository.findOne({
       where: {
-        email
-      }
+        email,
+      },
     });
 
     if (userExists) {
@@ -39,12 +41,12 @@ class CreateUserService {
     const user = await UserRepository.save({
       login,
       email,
-      password: hashedPassword
+      password: hashedPassword,
     });
 
     return {
       email: user.email,
-      login: user.login
+      login: user.login,
     };
   }
 }

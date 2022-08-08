@@ -2,9 +2,17 @@ import { DataSource } from 'typeorm';
 import Path from 'path';
 import { entities } from './entities';
 
-const path = Path.resolve(__dirname, '..', '..', '..', '..', 'rpa', 'src', 'database', 'default.sqlite');
-
-console.log(path);
+const path = Path.resolve(
+  __dirname,
+  '..',
+  '..',
+  '..',
+  '..',
+  'rpa',
+  'src',
+  'database',
+  'default.sqlite',
+);
 
 const SqliteDataSource = new DataSource({
   type: 'better-sqlite3',

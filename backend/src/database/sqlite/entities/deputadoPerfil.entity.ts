@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
-@Entity('deputados')
-export class Deputado {
+@Entity('deputadoPerfil')
+export class DeputadoPerfil {
   @PrimaryGeneratedColumn('increment')
   id: number;
 
@@ -9,14 +9,14 @@ export class Deputado {
   matricula: string;
 
   @Column()
-  deputado: string;
+  avatar: string;
 
   @Column()
-  partido: string;
+  email: string;
 
   @Column()
-  legislatura: number;
+  telefone: string;
 
   @Column()
-  periodo: string;
+  biografia: string;
 }

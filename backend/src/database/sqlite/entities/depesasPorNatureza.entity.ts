@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
-@Entity('deputados')
-export class Deputado {
+@Entity('despesasPorNatureza')
+export class DespesasPorNatureza {
   @PrimaryGeneratedColumn('increment')
   id: number;
 
@@ -9,14 +9,8 @@ export class Deputado {
   matricula: string;
 
   @Column()
-  deputado: string;
+  naturezaDespesas: string;
 
   @Column()
-  partido: string;
-
-  @Column()
-  legislatura: number;
-
-  @Column()
-  periodo: string;
+  valor: number;
 }
