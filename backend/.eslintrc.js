@@ -17,5 +17,10 @@ module.exports = {
     'class-methods-use-this': [0],
     'no-unused-expressions': [0],
     'prefer-template': [0],
+    'no-return-assign': [0],
+    'no-param-reassign': [0],
+    'no-restricted-syntax': [0],
+    'operator-assignment': [0],
+    'no-plusplus': [0],
   },
 };

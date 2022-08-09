@@ -17,7 +17,7 @@ const path = Path.resolve(
 const SqliteDataSource = new DataSource({
   type: 'better-sqlite3',
   database: path,
-  entities
+  entities,
 });
 
 SqliteDataSource.initialize()
