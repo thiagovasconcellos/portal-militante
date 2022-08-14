@@ -1,22 +1,22 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
 @Entity('deputados')
 export class Deputado {
-    @PrimaryGeneratedColumn('increment')
-    id: number
+  @PrimaryGeneratedColumn('increment')
+  id: number;
 
-    @Column()
-    matricula: string
+  @Column()
+  matricula: string;
 
-    @Column()
-    deputado: string
+  @Column()
+  deputado: string;
 
-    @Column()
-    partido: string
+  @Column()
+  partido: string;
 
-    @Column()
-    legislatura: number
+  @Column()
+  legislatura: number;
 
-    @Column()
-    periodo: string
+  @Column()
+  periodo: string;
 }
