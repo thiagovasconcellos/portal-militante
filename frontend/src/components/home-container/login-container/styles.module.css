@@ -1,0 +1,72 @@
+.container {
+    height: 60rem;
+    width: 82rem;
+    border-radius: 2.5rem;
+    background-color: #293D5F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formAlign {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 35.9rem;
+    height: 6.2rem;
+    background-color: transparent;
+    border: 1.5px solid #525E67;
+    padding: 0rem 2rem;
+    color: #FFF;
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 0.8rem;
+    margin-bottom: 2.4rem;
+}
+
+.checkbox {
+    margin-bottom: 7.9rem;
+}
+
+.checkbox input {
+    background-color: transparent;
+    border: 1.5px solid #525E67;
+    outline: none;
+}
+
+.checkbox span {
+    font-size: 1.6rem;
+}
+
+.button {
+    margin-bottom: 1.6rem;
+    width: 42.4rem;
+    height: 6.6rem;
+    background-color: #F5535F;
+    color: #FFF;
+    border-radius: 1.54rem;
+    border: none;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
+.subscribePhrase {
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.subscribePhrase strong {
+    color: #FDA730;
+    font-size: 1.6rem;
+    font-weight: 800;
+}
