@@ -12,7 +12,7 @@ export const LoginContainer = () => {
       <form className={styles.form} >
         <div className={styles.formAlign}>
           <input type="email" name="email" placeholder="Seu email" className={styles.input} />
-          <input type="senha" name="senha" placeholder="Sua senha" className={styles.input} />
+          <input type="password" name="senha" placeholder="Sua senha" className={styles.input} />
           <div className={styles.checkbox}>
             <input type="checkbox" className={styles.checkboxInput} /> <span>Lembrar de mim</span>
           </div>
