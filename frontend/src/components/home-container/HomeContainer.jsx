@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./styles.module.css";
 import PortalLogo from "../../assets/portal-logo.svg";
-import { LoginContainer } from "./login-container/LoginContainer";
+import { LoginContainer, LoginContainerFormik } from "./login-container/LoginContainer";
+import { SelectDeputyFormik } from "./select-deputy/SelectDeputy";
 
 export const HomeContainer = () => {
   return (
@@ -14,7 +15,7 @@ export const HomeContainer = () => {
         />
       </div>
       <div className={styles.form}>
-          <LoginContainer />
+          <SelectDeputyFormik />
       </div>
     </div>
     </div>

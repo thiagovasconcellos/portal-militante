@@ -1,0 +1,119 @@
+.container {
+    height: 60rem;
+    width: 82rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.align {
+    height: 100%;
+    max-width: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil__image {
+    padding: 1rem;
+    border: 0.1rem solid #999;
+    border-radius: 50%;
+    height: 16rem;
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil__image--content {
+    height: 14rem;
+    width: 14rem;
+    border-radius: 50%;
+    background-color: #999;
+}
+
+.perfil__description--name {
+    color: #828282;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    border-bottom: 0.1rem solid #828282;
+    width: 7.2rem;
+}
+
+.perfil__description--generalInfo {
+    color: #828282;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    border-bottom: 0.1rem solid #828282;
+}
+
+.text {
+    text-align: center;
+}
+
+.text__title {
+    font-weight: bold;
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+    margin-top: 2.9rem;
+}
+
+.text__paragraph strong {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #FDA730;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2.9rem;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input__text {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #FFF;
+}
+
+.input__field {
+    width: 35.9rem;
+    height: 6.2rem;
+    background-color: transparent;
+    border: 1.5px solid #525E67;
+    padding: 0rem 2rem;
+    color: #FFF;
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 0.8rem;
+    margin-bottom: 2.4rem;
+}
+
+.button {
+    margin-bottom: 1.6rem;
+    width: 42.4rem;
+    height: 6.6rem;
+    background-color: #F5535F;
+    color: #FFF;
+    border-radius: 1.54rem;
+    border: none;
+    font-size: 2.4rem;
+    font-weight: 800;
+}
