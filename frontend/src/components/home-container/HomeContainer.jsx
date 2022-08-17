@@ -15,7 +15,7 @@ export const HomeContainer = () => {
         />
       </div>
       <div className={styles.form}>
-          <SelectDeputyFormik />
+          <LoginContainerFormik />
       </div>
     </div>
     </div>

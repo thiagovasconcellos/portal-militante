@@ -1,7 +1,11 @@
 import React from 'react';
-import styles from './styles.module.css';
 import PortalLogoMini from "../../../assets/portal-logo-mini.svg";
 import { Field, Formik, useFormikContext } from 'formik';
+import { InputFormik } from '../../input-formik/InputFormik';
+import { Button } from '../../button/Button';
+
+import styles from './styles.module.css';
+
 
 export const LoginContainer = () => {
     const { handleSubmit } = useFormikContext()
@@ -13,17 +17,15 @@ export const LoginContainer = () => {
             </div>
             <form className={styles.form} onSubmit={handleSubmit}>
                 <div className={styles.formAlign}>
-                    <Field 
-                        type="email" 
+                    <InputFormik 
+                        type="email"
                         name="email" 
-                        placeholder="Seu email" 
-                        className={styles.input} 
+                        placeholder="Seu email"
                     />
-                    <Field
+                    <InputFormik 
                         type="password" 
                         name="password" 
-                        placeholder="Sua senha" 
-                        className={styles.input} 
+                        placeholder="Sua senha"
                     />
                     <div className={styles.checkbox}>
                         <input 
@@ -34,12 +36,10 @@ export const LoginContainer = () => {
                     </div>
                 </div>
 
-                <button 
-                    className={styles.button} 
-                    type="submit" 
-                >
-                    Entrar
-                </button>
+                <Button  
+                    type='submit'
+                    text='Entrar'
+                />
 
                 <span 
                     className={styles.subscribePhrase} 
