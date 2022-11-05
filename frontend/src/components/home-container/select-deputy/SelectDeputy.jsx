@@ -1,6 +1,10 @@
 import React from 'react';
-import styles from './styles.module.css';
 import { Field, Formik, useFormikContext } from 'formik';
+import { InputFormik } from '../../input-formik/InputFormik';
+import { Button } from '../../button/Button';
+
+import styles from './styles.module.css';
+
 
 const SelectDeputy = () => {
     const { handleSubmit } = useFormikContext()
@@ -29,10 +33,13 @@ const SelectDeputy = () => {
                     <p className={styles.text__paragraph}><strong>Não se preocupe, iremos proteger essa informação!</strong></p>
                 </div>
 
-                <form className={styles.form}>
+                <form className={styles.form} onSubmit={handleSubmit}>
                     <div className={styles.input}>
                         <label className={styles.input__text}>Seu candidato para deputado estadual 1</label>
-                        <Field className={styles.input__field} name="deputyOne" placeholder="Deputado estadual 1"/>
+                        <InputFormik
+                            name="deputyOne"
+                            placeholder="Deputado estadual 1"
+                        />
                     </div>
 
                     <div className={styles.input}>
@@ -40,11 +47,11 @@ const SelectDeputy = () => {
                         <Field className={styles.input__field} name="deputyTwo" placeholder="Deputado estadual 2"/>
                     </div>
 
-                    <button className={styles.button} type='submit'>Cadastrar</button>
+                    <Button  
+                        type='submit'
+                        text='Cadastrar'
+                    />
                 </form>
-                
-                
-
             </div>
         </div>
     )
@@ -59,7 +66,8 @@ export const SelectDeputyFormik = () => {
     return (
         <Formik
             initialValues={{
-                
+                deputyOne: '',
+                deputyTwo: ''
             }}
             onSubmit={onSubmit}
         >
